@@ -1,0 +1,145 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    width: 400px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Join Screen */
+.screen {
+    display: none;
+    padding: 30px;
+}
+
+.screen.active {
+    display: block;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form h2 {
+    text-align: center;
+    color: #000;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input label {
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.form-input input {
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.form-input button {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Chat Screen */
+.chat-screen .logo {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-screen .logo button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.update {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+}
+
+.messages .my-message,
+.messages .other-message {
+    display: flex;
+    align-items: flex-start;
+}
+
+.messages .my-message {
+    justify-content: flex-end;
+}
+
+.messages .my-message .text,
+.messages .other-message .text {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.messages .name {
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: #000;
+}
+
+.typebox {
+    display: flex;
+    padding: 10px;
+    background-color: #000;
+}
+
+.typebox input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+}
+
+.typebox button {
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
